@@ -4,8 +4,21 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.6.1",
+    "css-loader": "^3.2.0",
+    "extract-loader": "^3.1.0",
+    "file-loader": "^4.2.0",
+    "node-sass": "^4.12.0",
+    "path": "^0.12.7",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^7.3.1",
+    "style-loader": "^1.0.0",
+    "webpack": "^4.39.2",
+    "webpack-cli": "^3.3.7"
+  }
 }
