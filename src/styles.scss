@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600,700&display=swap');
 @import "assets/scss/vars";
 @import "assets/scss/mixin";
 @import "assets/scss/nav";
 @import "assets/scss/header";
+@import "assets/scss/about";
 @import "assets/scss/cases";
 
 body {
@@ -22,6 +23,36 @@ button {
 
     @include button-variant(transparent, var(--primary-color), var(--primary-color), var(--white-color));
   }
+
+  &.full {
+    width: 100%;
+  }
+}
+
+h3 {
+  font-size: 16px;
+  color: var(--text-color);
+  opacity: .5;
+  letter-spacing: 1px;
+  font-weight: 700;
+  margin: 0;
+}
+
+h4 {
+  font-size: 24px;
+  color: var(--text-color);
+  line-height: 33px;
+  margin: 24px 0;
+}
+
+p {
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 22px;
+}
+
+.container {
+  padding: 0 16px;
 }
 
 

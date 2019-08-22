@@ -1,4 +1,10 @@
 .cases {
+  display: flex;
+  flex-direction: column;
+
+  > button {
+    margin: 24px 0 48px;
+  }
 
   .list {
     position: relative;
@@ -15,6 +21,22 @@
     min-height: 404px;
     transition: .3s ease-in-out;
     background: linear-gradient(306.93deg, #E84951 0%, #798DF6 100%);
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 0 16px;
+      height: 404px;
+
+      h4, p {
+        color: var(--white-color);
+      }
+
+      button {
+        margin-bottom: 16px;
+      }
+    }
 
     .overlay {
       position: absolute;
