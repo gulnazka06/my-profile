@@ -3,11 +3,14 @@
 @import "assets/scss/mixin";
 @import "assets/scss/nav";
 @import "assets/scss/header";
-@import "assets/scss/about";
 @import "assets/scss/cases";
+@import "assets/scss/about";
+@import "assets/scss/contacts";
+@import "assets/scss/footer";
 
 body {
   font-family: $font-family-base;
+  overflow-x: hidden;
 }
 
 button {
@@ -35,6 +38,7 @@ h3 {
   opacity: .5;
   letter-spacing: 1px;
   font-weight: 700;
+  line-height: 22px;
   margin: 0;
 }
 
