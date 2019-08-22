@@ -1,0 +1,42 @@
+.cases {
+
+  .list {
+    position: relative;
+
+    > img {
+      position: absolute;
+      left: -27px;
+      bottom: -20px;
+    }
+  }
+
+  .case {
+    position: relative;
+    min-height: 404px;
+    transition: .3s ease-in-out;
+    background: linear-gradient(306.93deg, #E84951 0%, #798DF6 100%);
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #01081F;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: .3s ease-in-out;
+    }
+
+    &:hover {
+      transform: translateY(-1rem);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+
+      .overlay {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+  }
+}

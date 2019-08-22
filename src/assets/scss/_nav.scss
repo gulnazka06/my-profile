@@ -1,0 +1,32 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 34px 16px 105px;
+
+  img {
+    width: 60px;
+    height: 40px;
+  }
+
+  ul {
+    display: flex;
+    padding-left: 0;
+
+    li {
+      list-style: none;
+      padding-right: 15px;
+
+      &:last-child {
+        padding-right: 0;
+      }
+
+      a {
+        text-decoration: none;
+        font-size: 16px;
+        color: var(--white-color);
+        opacity: .5;
+      }
+    }
+  }
+}

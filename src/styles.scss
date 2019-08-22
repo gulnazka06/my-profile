@@ -1,1 +1,27 @@
-@import "assets/scss/test";
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600&display=swap');
+@import "assets/scss/vars";
+@import "assets/scss/mixin";
+@import "assets/scss/nav";
+@import "assets/scss/header";
+@import "assets/scss/cases";
+
+body {
+  font-family: $font-family-base;
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: $button-border-radius;
+  font-size: 14px;
+  cursor: pointer;
+  transition: .3s ease-in-out;
+
+  @include button-variant(transparent, var(--white-color), var(--white-color));
+
+  &.primary {
+
+    @include button-variant(transparent, var(--primary-color), var(--primary-color), var(--white-color));
+  }
+}
+
+
