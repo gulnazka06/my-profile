@@ -1,3 +1,5 @@
+@import "mixin";
+
 .contacts {
   position: relative;
   height: 714px;
@@ -47,6 +49,16 @@
     textarea {
       height: 135px;
       padding: 11px 16px;
+    }
+
+    @include tablet-portrait {
+      max-width: 560px;
+      width: 100%;
+      align-items: center;
+
+      input, textarea {
+        width: 100%;
+      }
     }
   }
 }

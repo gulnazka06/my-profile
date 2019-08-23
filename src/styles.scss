@@ -8,9 +8,10 @@
 @import "assets/scss/contacts";
 @import "assets/scss/footer";
 
-body {
+body, html {
   font-family: $font-family-base;
   overflow-x: hidden;
+  width: 100vw;
 }
 
 button {
@@ -29,6 +30,15 @@ button {
 
   &.full {
     width: 100%;
+
+    @include tablet-portrait {
+      width: auto;
+    }
+  }
+
+  @include tablet-portrait {
+    width: auto;
+    padding: 10px 60px;
   }
 }
 

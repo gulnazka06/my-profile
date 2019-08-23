@@ -1,26 +1,41 @@
+@import "mixin";
+
 .cases {
   display: flex;
   flex-direction: column;
 
   > button {
     margin: 24px 0 48px;
+
+    @include tablet-portrait {
+      align-self: flex-end;
+    }
   }
 
   .list {
     position: relative;
+    margin: 0 -10px;
 
     > img {
       position: absolute;
       left: -27px;
       bottom: -20px;
     }
+
+    @include tablet-portrait {
+      display: flex;
+    }
   }
 
   .case {
     position: relative;
+    border-radius: 6px;
+    overflow: hidden;
     min-height: 404px;
     transition: .3s ease-in-out;
+    // todo: цвета в переменные
     background: linear-gradient(306.93deg, #E84951 0%, #798DF6 100%);
+    margin: 0 10px;
 
     .content {
       display: flex;
@@ -60,5 +75,6 @@
         visibility: hidden;
       }
     }
+    }
   }
-}
+

@@ -1,3 +1,5 @@
+@import "mixin";
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -29,4 +31,14 @@ nav {
       }
     }
   }
+
+
+  @include tablet-portrait {
+    justify-content: center;
+
+    ul {
+      margin-left: 16px;
+    }
+  }
 }
+
