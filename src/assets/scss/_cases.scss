@@ -82,9 +82,24 @@
         visibility: hidden;
       }
     }
+
+    @include tablet-landscape {
+      width: 33.3333%;
     }
+  }
+
   @include tablet-portrait {
     margin-top: 48px;
+
+    h4 {
+      width: 70%;
+    }
   }
+
+  @include tablet-landscape {
+    h4 {
+      width: 40%;
+    }
   }
+}
 

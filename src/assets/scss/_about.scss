@@ -1,6 +1,8 @@
 @import "mixin";
 
 .about {
+  display: flex;
+  flex-direction: column;
   position: relative;
   margin-bottom: 48px;
 
@@ -29,5 +31,16 @@
   }
   @include tablet-portrait {
     margin-top: 48px;
+  }
+
+  @include tablet-portrait {
+    flex-direction: row-reverse;
+
+    .description {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-left: 48px;
+    }
   }
 }
