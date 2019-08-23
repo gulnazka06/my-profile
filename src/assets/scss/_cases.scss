@@ -86,7 +86,12 @@
     @include tablet-landscape {
       width: 33.3333%;
     }
+
+    @include desktop {
+      width: 25%;
+    }
   }
+
 
   @include tablet-portrait {
     margin-top: 48px;
