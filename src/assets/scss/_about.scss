@@ -27,4 +27,7 @@
       margin-left: auto;
     }
   }
+  @include tablet-portrait {
+    margin-top: 48px;
+  }
 }

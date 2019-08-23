@@ -3,6 +3,7 @@
 .cases {
   display: flex;
   flex-direction: column;
+  position: relative;
 
   > button {
     margin: 24px 0 48px;
@@ -10,6 +11,12 @@
     @include tablet-portrait {
       align-self: flex-end;
     }
+  }
+
+  .triangle {
+    position: absolute;
+    right: -50px;
+    top: -50px;
   }
 
   .list {
@@ -35,7 +42,7 @@
     transition: .3s ease-in-out;
     // todo: цвета в переменные
     background: linear-gradient(306.93deg, #E84951 0%, #798DF6 100%);
-    margin: 0 10px;
+    margin: 10px 10px;
 
     .content {
       display: flex;
@@ -76,5 +83,8 @@
       }
     }
     }
+  @include tablet-portrait {
+    margin-top: 48px;
+  }
   }
 
