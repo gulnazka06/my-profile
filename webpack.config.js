@@ -1,10 +1,15 @@
 const path = require('path');
+const fs = require('fs');
+const entries = fs
+  .readdirSync('./src/')
+  .filter(file => file.match(/.*\.scss$/))
+  .map(file => `./src/${file}`);
 
 module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
   },
-  entry: ['./src/styles.scss'],
+  entry: entries,
   module: {
     rules: [
       {
