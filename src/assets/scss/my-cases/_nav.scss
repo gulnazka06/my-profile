@@ -5,3 +5,16 @@
     justify-content: space-between;
   }
 }
+
+@include desktop() {
+  nav {
+    justify-content: center;
+
+    ul li {
+      a {
+        color: var(--text-color);
+        opacity: .5;
+      }
+    }
+  }
+}
