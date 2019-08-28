@@ -5,64 +5,63 @@
   flex-direction: column;
   position: relative;
 
-  > button {
-    margin: 24px 0 48px;
-
-    @include tablet-portrait {
-      align-self: flex-end;
-    }
-  }
-
-  .triangle {
+  .rectangle {
     position: absolute;
-    right: -50px;
+    right: -40px;
     top: -50px;
   }
 
   .list {
     position: relative;
     margin: 0 -10px;
-
-    > img {
-      position: absolute;
-      left: -27px;
-      bottom: -20px;
-      display: none;
-    }
   }
 
   .case {
     position: relative;
     border-radius: 6px;
-    overflow: hidden;
-    min-height: 404px;
     margin: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
+    > button {
 
-    @include tablet-landscape {
-      width: 33.3333%;
+      @include tablet-portrait {
+        align-self: flex-start;
+      }
     }
 
-    @include desktop {
-      width: 25%;
+    .photo {
+
+      .img {
+        position: relative;
+        width: 100%;
+      }
+
+      .shape {
+        position: absolute;
+        left: -42px;
+        bottom: -14px;
+        display: none;
+
+        @include tablet-portrait {
+          display: block;
+        }
+      }
     }
-  }
 
+    @include tablet-portrait {
+      padding-left: 50%;
+      position: relative;
 
-  @include tablet-portrait {
-    margin-top: 48px;
-
-    h4 {
-      width: 70%;
-    }
-  }
-
-  @include tablet-landscape {
-    h4 {
-      width: 40%;
+      > .photo {
+        position: absolute;
+        width: calc(50% - 16px);
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+      }
     }
   }
 }
+

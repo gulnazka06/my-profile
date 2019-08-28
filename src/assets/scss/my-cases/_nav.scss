@@ -1,0 +1,7 @@
+@import "../mixin";
+
+@include tablet-portrait() {
+  nav {
+    justify-content: space-between;
+  }
+}
