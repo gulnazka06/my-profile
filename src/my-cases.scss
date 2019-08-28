@@ -1,3 +1,7 @@
-body {
-  font-family: Farah;
-}
+@import "assets/scss/base";
+@import "assets/scss/nav";
+@import "assets/scss/header";
+@import "assets/scss/my-cases/header";
+@import "assets/scss/my-cases/case";
+@import "assets/scss/contacts";
+@import "assets/scss/footer";

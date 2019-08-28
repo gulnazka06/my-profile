@@ -1,0 +1,15 @@
+@import "../mixin";
+
+header {
+  background-position: 0 -100px;
+
+  .content {
+    align-items: flex-start;
+
+    h2 {
+      text-align: left;
+    }
+  }
+}
+
+
