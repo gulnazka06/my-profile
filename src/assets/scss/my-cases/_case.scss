@@ -9,6 +9,10 @@
     position: absolute;
     right: -40px;
     top: -50px;
+
+    @include tablet-landscape {
+      right: -20px;
+    }
   }
 
   .list {
@@ -61,6 +65,9 @@
         transform: translateY(-50%);
         left: 0;
       }
+    }
+    @include tablet-landscape {
+      padding-left: 62%;
     }
   }
 }
