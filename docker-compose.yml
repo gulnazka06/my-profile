@@ -1,0 +1,20 @@
+version: '2'
+
+services:
+
+  server:
+    restart: unless-stopped
+    build:
+      context: .
+    environment:
+      - VIRTUAL_HOST=gulnaz.website
+      - LETSENCRYPT_HOST=gulnaz.website
+      - LETSENCRYPT_EMAIL=dkildar@gmail.com
+      - DEBUG_COLORS=true
+    ports:
+      - 4204:4204
+
+networks:
+  default:
+    external:
+      name: nginx-proxy
