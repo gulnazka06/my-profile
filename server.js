@@ -2,9 +2,7 @@ const express = require('express')
 const app = express()
 const port = 4204
 
-app.use('/img', express.static('dist/img'));
-app.use('/css', express.static('dist/css'));
-app.use('/js', express.static('dist/js'));
+app.use('/', express.static('dist'));
 
 app.get('/', function(req, res){
   res.sendfile(__dirname + '/dist/index.html');
