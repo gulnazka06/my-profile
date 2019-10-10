@@ -2,16 +2,30 @@
     <nav :class="{ 'cases': $route.name == 'Cases' }">
         <img src="/assets/img/logo.svg" alt="">
         <ul>
-            <li><a href="">Me</a></li>
-            <li><a href="">Cases</a></li>
-            <li><a href="">Contacts</a></li>
+            <li>
+                <router-link exact-active-class="active" to="/">Me</router-link>
+            </li>
+            <li>
+                <router-link exact-active-class="active" to="/cases">Cases</router-link>
+            </li>
+            <li>
+                <a role="button" @click="onContactsClick">Contacts</a>
+            </li>
         </ul>
     </nav>
 </template>
 
 <script>
     export default {
-        name: "Nav"
+        name: "Nav",
+        methods: {
+            onContactsClick() {
+                const contacts = document.querySelector('.contacts');
+                contacts.scrollIntoView({
+                    behavior: 'smooth'
+                })
+            }
+        }
     }
 </script>
 
@@ -27,6 +41,7 @@
         top: 0;
         left: 0;
         right: 0;
+        z-index: 9;
 
         img {
             width: 60px;
@@ -51,6 +66,16 @@
                     font-size: 16px;
                     color: var(--white-color);
                     opacity: .5;
+                    transition: .3s;
+
+                    &.active {
+                        opacity: 1;
+                        font-weight: bolder;
+                    }
+
+                    &:hover {
+                        opacity: 1;
+                    }
                 }
             }
         }
@@ -75,7 +100,6 @@
 
                     a {
                         color: var(--text-color);
-                        opacity: .5;
                     }
                 }
             }

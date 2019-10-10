@@ -3,7 +3,6 @@
         <Header></Header>
         <Cases></Cases>
         <About></About>
-        <Contacts></Contacts>
     </div>
 </template>
 
