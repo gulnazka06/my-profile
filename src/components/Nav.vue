@@ -1,5 +1,5 @@
 <template>
-    <nav>
+    <nav :class="{ 'cases': $route.name == 'Cases' }">
         <img src="/assets/img/logo.svg" alt="">
         <ul>
             <li><a href="">Me</a></li>
@@ -58,10 +58,28 @@
         @include tablet-portrait {
             justify-content: center;
 
+            &.cases {
+                justify-content: space-between;
+            }
+
             ul {
                 margin-left: 16px;
             }
         }
-    }
 
+        @include desktop() {
+            &.cases {
+                justify-content: center;
+
+                ul li {
+
+                    a {
+                        color: var(--text-color);
+                        opacity: .5;
+                    }
+                }
+            }
+        }
+
+    }
 </style>

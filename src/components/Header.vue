@@ -10,11 +10,11 @@
 
 <script>
     export default {
-        name: "Header"
+        name: "Header",
     }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
     @import "../styles/mixin";
     header {
         background-image: url('/assets/img/header-bg.svg');

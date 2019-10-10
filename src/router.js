@@ -4,7 +4,7 @@ import VueRouter from 'vue-router'
 
 const routes = [
     { path: '/', component: Index },
-    { path: '/cases', component: Cases }
+    { path: '/cases', component: Cases, name: 'Cases' }
 ]
 
 export const router = new VueRouter({
