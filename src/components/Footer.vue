@@ -3,9 +3,13 @@
         <div class="foot">
             <img class="logo" src="/assets/img/logo-ipad.svg" alt="">
             <div class="socials">
-                <a href=""><img src="/assets/img/git.svg" alt=""></a>
+                <a href="https://github.com/gulnazka06" target="_blank" rel="noopener">
+                    <img src="/assets/img/git.svg" alt="">
+                </a>
                 <a href=""><img src="/assets/img/be.svg" alt=""></a>
-                <a href=""><img src="/assets/img/ig.svg" alt=""></a>
+                <a href="https://instagram.com/luminous_06" target="_blank" rel="noopener">
+                    <img src="/assets/img/ig.svg" alt="">
+                </a>
             </div>
         </div>
         <div class="copyright"><b>Gulnaz Khamatnurova</b>.2019.</div>

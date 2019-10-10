@@ -5,7 +5,7 @@
             <h1>My Cases.</h1>
             <h2>MODERN AND POWERFUL PROJECTS
                 <br>MADE BY ME</h2>
-            <button :class="{ primary: isPrimaryButton }">Look at the latest work</button>
+            <button @click="onLookClick" :class="{ primary: isPrimaryButton }">Look at the latest work</button>
         </div>
     </header>
 </template>
@@ -16,6 +16,14 @@
         data() {
             return {
                 isPrimaryButton: false,
+            }
+        },
+        methods: {
+            onLookClick() {
+                const caseElement = document.querySelector('.case');
+                caseElement.scrollIntoView({
+                    behavior: 'smooth'
+                })
             }
         },
         mounted() {

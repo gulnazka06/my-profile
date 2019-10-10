@@ -1,13 +1,15 @@
 <template>
     <div class="cases container">
-        <img class="triangle" src="public/assets/img/triangle.svg" alt="">
+        <img class="triangle" src="/assets/img/triangle.svg" alt="">
         <h3>MY CASES</h3>
         <h4>In each project, I use modern and powerful solutions for the best result.</h4>
         <div class="list">
-            <img src="public/assets/img/oval.svg" alt="">
+            <img src="/assets/img/oval.svg" alt="">
             <Case></Case>
         </div>
-        <button class="full primary">View all</button>
+        <router-link to="/cases" class="button">
+            <button class="full primary">View all</button>
+        </router-link>
     </div>
 </template>
 
@@ -27,7 +29,7 @@
         flex-direction: column;
         position: relative;
 
-        > button {
+        > .button {
             margin: 24px 0 48px;
 
             @include tablet-portrait {

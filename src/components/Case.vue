@@ -8,7 +8,7 @@
             <button>View project</button>
         </div>
         <div class="overlay">
-            <img src="public/assets/img/example-project.png" alt="">
+            <img src="/assets/img/example-project.png" alt="">
         </div>
     </div>
 </template>

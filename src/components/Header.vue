@@ -3,7 +3,7 @@
     <div class="content">
         <h1>I'm Gulnaz</h1>
         <h2>CREATIVE FRONTED DEVELOPER</h2>
-        <button>Get started</button>
+        <button @click="onGetStartedClick">Get started</button>
     </div>
 </header>
 </template>
@@ -11,6 +11,14 @@
 <script>
     export default {
         name: "Header",
+        methods: {
+            onGetStartedClick() {
+                const cases = document.querySelector('.cases');
+                cases.scrollIntoView({
+                    behavior: 'smooth'
+                })
+            }
+        }
     }
 </script>
 

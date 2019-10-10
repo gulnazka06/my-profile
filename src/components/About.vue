@@ -5,7 +5,7 @@
             <h3>ABOUT ME</h3>
             <h4>The main principles for me are speed and quality.</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel ipsum et lectus commodo efficitur. Donec venenatis vulputate dui, tincidunt porta velit egestas vel. </p>
-            <button class="full primary">Hire me</button>
+            <button @click="onHireClick" class="full primary">Hire me</button>
         </div>
         <img src="/assets/img/about-sketch.svg" alt="">
     </div>
@@ -13,7 +13,15 @@
 
 <script>
     export default {
-        name: "About"
+        name: "About",
+        methods: {
+            onHireClick() {
+                const contacts = document.querySelector('.contacts');
+                contacts.scrollIntoView({
+                    behavior: 'smooth'
+                })
+            }
+        }
     }
 </script>
 
